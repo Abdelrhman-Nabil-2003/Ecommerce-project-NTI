@@ -1,0 +1,53 @@
+<!-- home.html -->
+<div
+  class="hero-bg min-vh-100 d-flex align-items-center justify-content-center text-white text-center position-relative"
+  style="
+    background: linear-gradient(135deg, #163d2e, #002015);
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+  "
+>
+  <div class="stars position-absolute w-100 h-100"></div>
+
+  <div class="container position-relative z-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-1 fw-bold mb-4 animate__animated animate__fadeInDown">
+          <span style="color: #ffd700;">Shoping</span>Easy<span style="color: #ffd700;">bro</span> <span style="font-size: 70px;">😉</span>
+
+        </h1>
+        <p class="lead fs-2 mb-5 opacity-75 animate__animated animate__fadeInUp">
+         Everything is available 🤥
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional animation + background effect -->
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stars::before {
+    content: "";
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.1;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .z-2 {
+    z-index: 2;
+  }
+</style>

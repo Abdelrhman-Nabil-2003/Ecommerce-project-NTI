@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: #e8f5f0;">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" routerLink="/home" style="color: #163d2e;">
+      <i class="bi bi-shop me-2"></i>Shoping
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" style="color: #163d2e;">
+            <i class="bi bi-house me-1"></i> Home
+          </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" routerLink="/products" routerLinkActive="active" style="color: #163d2e;">
+            <i class="bi bi-grid me-1"></i> Products
+          </a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" style="color: #163d2e;">
+            <i class="bi bi-info-circle me-1"></i> About
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item position-relative me-3">
+          <a class="nav-link position-relative" routerLink="/cart" style="color: #163d2e;">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+            </span>
+          </a>
+        </li>
+
+        <!-- Login Button -->
+        <li class="nav-item ms-2">
+          <a class="nav-link btn px-3 py-1" routerLink="/login" style="background-color: #163d2e; color: white; border-radius: 20px;">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </a>
+        </li>
+
+        <!-- Signup Button -->
+        <li class="nav-item ms-2">
+          <a class="nav-link btn px-3 py-1" routerLink="/signup" style="border: 2px solid #163d2e; color: #163d2e; border-radius: 20px;">
+            <i class="bi bi-person-plus me-1"></i> Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
